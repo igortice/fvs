@@ -6,7 +6,9 @@ const routes: Routes = [
   {
     path:      '',
     component: LayoutComponent,
-    children:  []
+    children:  [
+      { path: '', loadChildren: '../pages/index/index.module#IndexModule' }
+    ]
   }
 ];
 
