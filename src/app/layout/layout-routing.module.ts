@@ -7,7 +7,8 @@ const routes: Routes = [
     path:      '',
     component: LayoutComponent,
     children:  [
-      { path: '', loadChildren: '../pages/index/index.module#IndexModule' }
+      { path: '', loadChildren: '../pages/index/index.module#IndexModule' },
+      { path: '**', loadChildren: '../pages/not-found/not-found.module#NotFoundModule' }
     ]
   }
 ];
