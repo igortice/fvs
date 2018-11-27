@@ -7,10 +7,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundComponent
   ],
   imports:      [
     BrowserModule,

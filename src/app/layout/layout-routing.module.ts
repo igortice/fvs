@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
+import { NotFoundComponent } from '../pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children:  [
       { path: '', loadChildren: '../pages/index/index.module#IndexModule' },
-      { path: '**', loadChildren: '../pages/not-found/not-found.module#NotFoundModule' }
+      { path: '**', component: NotFoundComponent }
     ]
   }
 ];
